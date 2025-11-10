@@ -17,9 +17,10 @@ body {
   line-height: 1.5;
 }
 .container {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 0 20px;
   text-align: center;
 }
 
@@ -111,11 +112,12 @@ body {
 @media (min-width: 1024px) {
   .grid {
     grid-template-columns: repeat(3, 1fr);
+    justify-items: stretch;
   }
   .profile {
-    flex-direction: row;
-    text-align: left;
-    align-items: center;
+    max-width: 900px; /* Profil kengligini boshqaradi */
+    margin: 0 auto; /* Markazga qo‘yadi */
+    justify-content: center;
   }
   .profile img {
     margin-right: 40px;
