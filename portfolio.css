@@ -30,11 +30,11 @@ body {
   gap: 20px;
 }
 .profile img {
-  width: 160px;
-  height: 160px;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
   border-radius: 50%;
   border: 4px solid var(--accent);
-  object-fit: cover;
 }
 .profile h1 {
   font-size: 32px;
@@ -42,7 +42,8 @@ body {
 }
 .profile p {
   font-size: 18px;
-  opacity: 0.85;
+  color: #dfefff; /* biroz oppoqroq */
+  opacity: 0.95;
 }
 .buttons {
   display: flex;
@@ -57,10 +58,12 @@ body {
   text-decoration: none;
   font-weight: 600;
   border-radius: 6px;
-  transition: transform 0.2s;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  box-shadow: 0 6px 18px rgba(0, 179, 255, 0.08);
 }
 .buttons a:hover {
-  transform: translateY(-3px);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 179, 255, 0.16);
 }
 .works {
   margin-top: 60px;
@@ -72,7 +75,7 @@ body {
 }
 .grid {
   display: grid;
-  gap: 20px;
+  gap: 28px;
   grid-template-columns: 1fr;
 }
 
