@@ -125,4 +125,7 @@ body {
   .buttons {
     justify-content: flex-start;
   }
+  .works {
+    justify-content: center;
+  }
 }
